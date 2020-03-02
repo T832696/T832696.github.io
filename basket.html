@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <!-- The title is what will appear on the tab in the browser. -->
+  <title>My Shopping Cart</title>
+
+      <!-- You need to link css and any external code in the head. -->
+
+  <!-- The two links below link to Jquery which allows for easier and more efficient use of javascript and bootstrap which allows you to add themes to your webpages. -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="cart.css">
+      <link rel="stylesheet" href="navbar1.css">
+</head>
+
+<body>
+
+  <ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="accountcreation.html"> Account Creation</a></li>
+    <li><a href="SignIn.html">Sign In</a></li>
+    <li><a href="contact.html"> Contact</a></li>
+  <li><a href="basket.html"> Special Offers</a></li>
+  </ul>
+
+  <style>
+  body {
+    background-color: #696969;}
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #B381D9;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #8F45C7;
+  }
+  </style>
+
+
+
+<!-- Div containing products -->
+  <div class="container">
+    <div class="row">
+      <div class="col col-sm-9">
+        <h1>Special Offers</h1>
+        <div class="row">
+          <!-- Product 1-->
+          <div class="col col-xs-12 col-md-6 col-lg-4">
+
+            <div>
+              <img src="Resources/pc.jpg" width="150px" height="200px">
+            </div>
+
+          <h2>Alienware Area 51</h2>
+          <p>one of the best pre built computers money can buy</p>
+          <p>&pound1350</p>
+          <p><input type="submit" value="Add to cart" class="btn"/></p>
+          </div>
+
+  <!-- Product 2-->
+          <div class="col col-xs-12 col-md-6 col-lg-4">
+            <div>
+              <img src="Resources/dell.jpg" width="150px" height="200px">
+            </div>
+
+          <h2>dell monitor 17 inch</h2>
+          <p>Cheap deal must buy</p>
+          <p>&pound10.50</p>
+          <p><input type="submit" value="Add to cart" class="btn"/></p>
+          </div>
+</div>
+
+
+
+
+
+
+
+
+  <!-- This section adds the shipping address form when you confirm order. -->
+      <div id="calculator">
+      </div>
+      <form>
+            <div id='shipping-form'>
+                <div>
+                    <label>Name</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div>
+                    <label>Address Line 1</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div>
+                    <label>Address Line 2</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div>
+                    <label>City</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div>
+                    <label>County</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div>
+                    <label>Post Code</label>
+                    <input type="text" class="form-control">
+                </div>
+            <div>
+                <input type="button" value="Submit" id="finish" />
+            </div>
+        </form>
+
+      </div>
+
+
+
+
+  <!--Link to javascript for cart-->
+<script src="cart.js"></script>
+</body>
+</html>
